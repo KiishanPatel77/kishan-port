@@ -13,12 +13,16 @@
         crossorigin="anonymous"></script>
 </head>
 <style>
-
+ 
+    .carousel-item img {
+            height: 550px;
+            object-fit: cover;
+        }
 </style>
 
 <body>
 
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark ">
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark ">
         <div class="container">
             <a href="#" class="navbar-brand text-white">Kishan Parsana</a>
 
@@ -49,6 +53,41 @@
             </div>
         </div>
     </nav>
-</body>
 
+    <div id="carouselExampleFade" class="carousel slide carousel-fade"
+        data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg"
+                    class="d-block w-100" alt="Lion">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/1612351/pexels-photo-1612351.jpeg"
+                    class="d-block w-100" alt="Nature">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/9394275/pexels-photo-9394275.jpeg"
+                    class="d-block w-100" alt="Mountain">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
